@@ -26,6 +26,11 @@ app.use(require("./router/auth"));
 
 app.use(bodyParser.json());
 
+app.get('/', (req, res) => {
+  res.send('Server Started for ACEM MIS')
+}
+)
+
 app.use(
   fileUpload({
     useTempFiles: true,
